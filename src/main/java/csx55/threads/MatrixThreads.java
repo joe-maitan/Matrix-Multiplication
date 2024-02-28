@@ -44,32 +44,28 @@ public class MatrixThreads {
         Matrix y = new Matrix('Y', MATRIX_DIMENSIONS);
         Matrix z = new Matrix('Z', MATRIX_DIMENSIONS);
 
-        
-        // mainThreadLock.wait();
-        System.out.println("Calculating Matrix X");
+        // System.out.println("Calculating Matrix X");
         // System.out.println(a.toString());
         // System.out.println(b.toString());
         x.data = x.multiplyMatrices(a, b, MATRIX_DIMENSIONS, pool);
         // System.out.println(x.toString());
 
-        System.out.println("Calculating Matrix Y");
+        // System.out.println("Calculating Matrix Y");
         // System.out.println(c.toString());
         // System.out.println(d.toString());
         y.data = y.multiplyMatrices(c, d, MATRIX_DIMENSIONS, pool);
         // System.out.println(y.toString());
 
-        System.out.println("Calculating Matrix Z");
+        // System.out.println("Calculating Matrix Z");
         // System.out.println(x.toString());
         // System.out.println(y.toString());
         z.data = z.multiplyMatrices(x, y, MATRIX_DIMENSIONS, pool);
         // System.out.println(z.toString());
         
-        
         double cumulativeTime = x.getTime() + y.getTime() + z.getTime();
        
         String output = String.format("Cumulative time to compute matrices X, Y, and Z using a thread pool of size = %d is : %.3f s", THREAD_POOL_SIZE, cumulativeTime);
         System.out.println(output);
-        // pool.close();
     } // End main method
     
 } // End MatrixThreads class
