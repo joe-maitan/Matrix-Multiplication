@@ -47,8 +47,14 @@ public class ThreadPool {
             int[][] m2 = j.getMatrixTwo();
             int[][] productMatrix = j.getProductMatrix();
 
+            int[] m1Row = m1[j.getRow()];
+            int[] m2Col = m2[j.getCol()];
+
             for (int pos = 0; pos < m1.length; ++pos) {
                 product += m1[j.getRow()][pos] * m2[pos][j.getCol()];
+
+                // TODO: UNCOMMENT WHEN FIGURED OUT TRANSPOSE
+                // product += m1Row[pos] * m2Col[pos];
             } // End outside for loop
 
             productMatrix[j.getRow()][j.getCol()] = product;
