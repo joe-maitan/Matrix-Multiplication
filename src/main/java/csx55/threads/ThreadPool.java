@@ -51,10 +51,11 @@ public class ThreadPool {
             int[] m2Col = m2[j.getCol()];
 
             for (int pos = 0; pos < m1.length; ++pos) {
-                product += m1[j.getRow()][pos] * m2[pos][j.getCol()];
+                // This works with a second matrix that is not transposed
+                // product += m1[j.getRow()][pos] * m2[pos][j.getCol()];
 
-                // TODO: UNCOMMENT WHEN FIGURED OUT TRANSPOSE
-                // product += m1Row[pos] * m2Col[pos];
+                // Case where m2 is transposed
+                product += m1Row[pos] * m2Col[pos];
             } // End outside for loop
 
             productMatrix[j.getRow()][j.getCol()] = product;

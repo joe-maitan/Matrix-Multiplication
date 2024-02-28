@@ -66,10 +66,13 @@ public class Matrix {
     public int[][] transposeMatrix(int[][] originalMatrix) {
         int[][] transposedMatrix = new int[originalMatrix.length][originalMatrix.length];
 
-        for (int ) {
-
+        for (int row = 0; row < transposedMatrix.length; ++row) {
+            for (int col = 0; col < transposedMatrix.length; ++col) {
+                transposedMatrix[row][col] = originalMatrix[col][row];
+            } // End nested for loop
         } // End for loop
 
+        return transposedMatrix;
     } // End transposeMatrix(int[][]) method
 
     public long sumOfMatrixElements(int[][] arr, int dimensions) { /* DO NOT SYNCHRONIZE */
@@ -97,7 +100,7 @@ public class Matrix {
         int[][] arr_one = one.getData();
         int[][] arr_two = two.getData();
 
-        // transpose the second arr
+        arr_two = transposeMatrix(arr_two);
 
         int[][] productArr = new int[desiredDimensions][desiredDimensions];
         
