@@ -24,7 +24,7 @@ public class MatrixThreads {
         ThreadPool pool = new ThreadPool(THREAD_POOL_SIZE);
     
         System.out.println("Dimensionality of the square matrices is: " + MATRIX_DIMENSIONS);
-        System.out.println("The thread pool has been initialized to: " + THREAD_POOL_SIZE);
+        System.out.println("The thread pool size has been initialized to: " + THREAD_POOL_SIZE);
         System.out.println();
 
         /* These are our four matrices used to calculate X and Y 
