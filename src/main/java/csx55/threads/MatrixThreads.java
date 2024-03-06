@@ -1,8 +1,6 @@
 package csx55.threads;
 
-import java.util.ArrayList;
 import java.util.Random;
-import java.util.concurrent.locks.ReentrantLock;
 
 public class MatrixThreads {
 

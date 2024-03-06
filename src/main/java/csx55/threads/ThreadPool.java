@@ -1,13 +1,11 @@
 package csx55.threads;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 
 public class ThreadPool {
 
     private Thread[] threads; /* used to hold our threads */
     private static volatile ConcurrentLinkedQueue<Job> jobQueue = new ConcurrentLinkedQueue<>();
-    // private static volatile LinkedBlockingQueue<Job> jobQueue = new LinkedBlockingQueue<>();
 
     public ThreadPool(int size) {
         threads = new Thread[size];
