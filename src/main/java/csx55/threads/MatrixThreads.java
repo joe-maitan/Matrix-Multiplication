@@ -19,8 +19,9 @@ public class MatrixThreads {
             System.exit(1);
         } // End if statement
 
+        // Could pass in the THREAD_POOL_SIZE argument or could pass in Runtime.getRuntime().availableProcessors()
         ThreadPool pool = new ThreadPool(THREAD_POOL_SIZE);
-    
+
         System.out.println("Dimensionality of the square matrices is: " + MATRIX_DIMENSIONS);
         System.out.println("The thread pool size has been initialized to: " + THREAD_POOL_SIZE);
         System.out.println();
