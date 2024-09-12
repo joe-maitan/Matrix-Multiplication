@@ -1,5 +1,11 @@
-# csx55---hw2
+# Multrithreaded Matrix Multiplication
 
-Synchronization and Coordination Using Thread Pools.
+The objective of this project was to get comfortable with using threads and synchronization mechanisms. 
 
-From the assignment directions, "The objective of this assignment is to get you to be comfortable with threads and synchronization mechanisms. Another objective of this assignment is to introduce the role that data structures and locking mechanisms play in designing concurrent programs".
+This project was the most fun I have had in a coding project in a while because it was teaching me concepts that I felt could apply to something I wanna do in the future.
+
+What I learned about:
+- Synchronization mechanisms and when to use them.
+- Differences between the utilization of a thread pool and just creating multiple random object threads.
+- The role data structures and locking mechanisms play when designing concurrent programs.
+- How to debug and prevent concurrency issues.
