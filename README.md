@@ -11,4 +11,4 @@ What I learned about:
 - How to debug and prevent concurrency issues.
 
 ### Notes:
-This project was built using Gradle. I left tools for loading the module or downloading the tool for your OS here in my network overlay project: [https://github.com/joe-maitan/csx55-hw1/tree/main](https://github.com/joe-maitan/Network-Overlay)
+This project was built using Gradle. I left tools for loading the module or downloading the tool for your OS here in my network overlay project: https://github.com/joe-maitan/Network-Overlay
