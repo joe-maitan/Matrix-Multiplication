@@ -9,3 +9,6 @@ What I learned about:
 - Differences between the utilization of a thread pool and just creating multiple random object threads.
 - The role data structures and locking mechanisms play when designing concurrent programs.
 - How to debug and prevent concurrency issues.
+
+### Notes:
+This project was built using Gradle. I left tools for loading the module or downloading the tool for your OS here in my network overlay project: https://github.com/joe-maitan/csx55-hw1/tree/main
