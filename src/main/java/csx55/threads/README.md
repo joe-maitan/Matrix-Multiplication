@@ -1,6 +1,9 @@
 # How to run the main program!
 ## Commands to remember:
 ```
+module load dev/gradle
+```
+```
 gradle build
 ```
 
