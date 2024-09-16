@@ -1,4 +1,6 @@
 # How to run the main program!
+You must have Java version 8 or higher to build and run the program.
+
 ## Commands to remember:
 ```
 module load dev/gradle
