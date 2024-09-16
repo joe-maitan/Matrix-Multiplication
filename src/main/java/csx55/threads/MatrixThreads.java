@@ -10,9 +10,7 @@ public class MatrixThreads {
             System.exit(1);
         } // End if statement
 
-        System.out.println("The number of available cores is: " + Runtime.getRuntime().availableProcessors());
-
-        final int THREAD_POOL_SIZE = Runtime.getRuntime().availableProcessors();
+        final int THREAD_POOL_SIZE = Integer.parseInt(args[0]); // Runtime.getRuntime().availableProcessors();
         final int MATRIX_DIMENSIONS = Integer.parseInt(args[1]);
         final int SEED = Integer.parseInt(args[2]);
 
@@ -21,11 +19,9 @@ public class MatrixThreads {
             System.exit(1);
         } // End if statement
 
-        // Could pass in the THREAD_POOL_SIZE argument or could pass in Runtime.getRuntime().availableProcessors()
-        ThreadPool pool = new ThreadPool(THREAD_POOL_SIZE);
-
         System.out.println("Dimensionality of the square matrices is: " + MATRIX_DIMENSIONS);
         System.out.println("The thread pool size has been initialized to: " + THREAD_POOL_SIZE);
+        ThreadPool pool = new ThreadPool(THREAD_POOL_SIZE);
         System.out.println();
 
         /* These are our four matrices used to calculate X and Y 
