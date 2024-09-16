@@ -121,8 +121,7 @@ public class Matrix {
         } // End for loop
 
         while (!pool.isJobQueueEmpty()) { 
-            /* spin and wait for jobs to be done */ 
-            Thread.onSpinWait();
+            Thread.onSpinWait(); /* spin and wait for jobs to be done */ 
         }
 
         endTime = System.nanoTime();
